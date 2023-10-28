@@ -2,6 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+// ignore: depend_on_referenced_packages
 import 'package:page_transition/page_transition.dart';
 
 import 'lock_screen.dart';

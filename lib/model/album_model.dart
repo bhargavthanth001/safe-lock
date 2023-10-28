@@ -1,8 +1,5 @@
 import 'dart:convert';
 
-// ignore: depend_on_referenced_packages
-import 'package:multiple_images_picker/multiple_images_picker.dart';
-
 // ignore: non_constant_identifier_names
 AlbumModel AlbumModelFromJson(String str) =>
     AlbumModel.fromJson(json.decode(str));

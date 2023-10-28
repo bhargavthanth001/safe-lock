@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+// ignore: depend_on_referenced_packages
 import 'package:local_auth/local_auth.dart';
 
 class LocalAuth {
@@ -13,24 +15,24 @@ class LocalAuth {
   static String authorize = "Not Authorized";
 
   static Future<void> checkBiometric() async {
-    bool _canCheckBiometric = false;
+    bool canCheckBiometric = false;
 
     try {
-      _canCheckBiometric = await auth.canCheckBiometrics;
+      canCheckBiometric = await auth.canCheckBiometrics;
     } on PlatformException catch (e) {
       debugPrint(e.toString());
     }
-    canCheckBiometric = _canCheckBiometric;
+    canCheckBiometric = canCheckBiometric;
   }
 
   static Future<void> getAvailableBiometrics() async {
-    List<BiometricType> _availableBiometrics = [];
+    List<BiometricType> availableBiometrics = [];
     try {
-      _availableBiometrics = await auth.getAvailableBiometrics();
+      availableBiometrics = await auth.getAvailableBiometrics();
     } on PlatformException catch (e) {
       debugPrint(e.toString());
     }
-    availableBiometric = _availableBiometrics;
+    availableBiometric = availableBiometrics;
   }
 
   static Future<bool> authenticate() async {

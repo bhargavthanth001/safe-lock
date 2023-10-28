@@ -1,5 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/cupertino.dart';
+
+// ignore: depend_on_referenced_packages
 import 'package:shared_preferences/shared_preferences.dart';
 import '../model/album_model.dart';
 

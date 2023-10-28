@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+
+// ignore: depend_on_referenced_packages
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:safe_lock/model/album_model.dart';
 
 class Utils {
   static Utils shared = Utils();
   final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
-  bool isLockScreen = true;
+  bool isLockScreen = true;1
   Widget? widget;
   String? pin;
   bool isPhotos = false;

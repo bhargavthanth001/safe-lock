@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:safe_lock/data_handler/data_handler.dart';
 import 'package:safe_lock/model/album_model.dart';
@@ -24,6 +23,7 @@ class ImageView extends StatefulWidget {
 
 class _ImageViewState extends State<ImageView> {
   List<Asset> imageAssets = [];
+  bool loading = false;
 
   @override
   void initState() {

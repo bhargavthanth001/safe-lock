@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:safe_lock/local_auth.dart';
 import 'package:safe_lock/utils.dart';
 import 'package:safe_lock/view/splash_screen.dart';
 import 'appLock_state.dart';

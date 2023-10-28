@@ -1,6 +1,8 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+// ignore: depend_on_referenced_packages
 import 'package:photo_view/photo_view_gallery.dart';
 import 'package:safe_lock/model/album_model.dart';
 import 'package:safe_lock/view/image_viewer.dart';
