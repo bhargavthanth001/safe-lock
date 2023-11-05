@@ -111,10 +111,4 @@ class DataHandler {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.remove(key);
   }
-
-  void analysis() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.remove(key);
-  }
-
 }
