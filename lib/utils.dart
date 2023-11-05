@@ -6,7 +6,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 class Utils {
   static Utils shared = Utils();
   final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
-  bool isLockScreen = true;1
+  bool isLockScreen = true;
   Widget? widget;
   String? pin;
   bool isPhotos = false;
